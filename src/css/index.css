@@ -1,0 +1,74 @@
+:root {
+  font-family: Inter, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #eef2ff;
+  background:
+    radial-gradient(circle at top, rgba(89, 119, 255, 0.32), transparent 32%),
+    radial-gradient(circle at 20% 20%, rgba(255, 107, 107, 0.16), transparent 24%),
+    linear-gradient(180deg, #08101f 0%, #050914 100%);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background: transparent;
+  color: #eef2ff;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  font-weight: 500;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+button {
+  border-radius: 999px;
+  border: 1px solid transparent;
+  padding: 0.75em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #10192c;
+  color: #eef2ff;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+button:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+button:focus,
+button:focus-visible {
+  outline: 3px solid rgba(91, 140, 255, 0.45);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: rgba(91, 140, 255, 0.35);
+  color: #fff;
+}
